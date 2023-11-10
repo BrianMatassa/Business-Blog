@@ -1,24 +1,28 @@
 body{
-    background-color: gray;
+    background-color: aliceblue;
 }
-
 
 .rectangulo{
     background-color: white;
-    height: 500px;
+    height: 550px;
     width: 400px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 3%;
+    clip-path: inset(50px 0 0px 0);
+    overflow: hidden;
 }
 
-.imagenSuperior{
-    position: relative;
-    height: 400px;
-    
+.imagen{
+    position: absolute;
+    clip-path: inset(0 0 30px 0);
+    left: 472px;
+    top: 100px;
+    overflow: hidden;
 }
+
 
 img{
     border-top-right-radius: 3%;
@@ -27,18 +31,18 @@ img{
 
 .wavy{
     min-height: 100vh;
-    width: 100%;
-    top: 55%;
+    width: 60%;
+    top: 181px;
+    right: 471px;
     position: absolute;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    transform: translate(-50%, -50%);
+    z-index: 9000;
+
 }
 
 svg{
-    position: relative;
-    top: 50%;
+    position: absolute;
+    top: 10%;
     left: 50%;
 }
 
@@ -64,9 +68,16 @@ svg{
     font-family: Lato;
     font-size: 16px;
     margin-left: 30px;
-    top: 68%;
+    top: 67%;
     position: absolute;
     opacity: 60%;
+}
+
+hr{
+    position: absolute;
+    top: 80%;
+    width: 100%;
+    opacity: 30%;
 }
 
 .avatar{
@@ -74,23 +85,23 @@ svg{
     margin-left: 50px;
     position: absolute;
     transform: translate(-50%,-50%);
-    bottom: 10px;
+    bottom: 5px;
     border: 3px solid rgba(128, 128, 128, 0.2);
 }
 
 .nombre{
     font-family: Lato;
     font-size: 16px;
-    margin-left: 87px;
-    top: 410px;
     position: absolute;
+    bottom: 37px;
+    left: 22%;
 }
 
 .detalles{
     font-family: Lato;
-    font-size: 11px;
-    margin-left: 87px;
-    top: 435px;
+    font-size: 12px;
     position: absolute;
-    opacity: 75%;
+    left: 22%;
+    bottom: 23px;
+    opacity: 60%;
 }
